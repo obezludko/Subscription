@@ -105,13 +105,15 @@ else:
 
 
 """First rebill validation makes here"""
+
+
 def select_created_first_rebill():
     cursor = connection.cursor()
     first_rebill_select_query = "SELECT * " \
                                 "FROM rebill " \
                                 "WHERE click_id = {} AND external_message_id = '{}'".format(used_click_for_subscription,
-                                                                                          case_1_first_rebill_params[
-                                                                                              'external_message_id'])
+                                                                                            case_1_first_rebill_params[
+                                                                                                'external_message_id'])
     cursor.execute(first_rebill_select_query)
     first_rebill_cortage = cursor.fetchall()
     first_rebill_row = first_rebill_cortage[0]
@@ -181,16 +183,62 @@ def select_first_rebill_currency_rate():
     return first_rebill_row[0]
 
 
-def calculate_first_rebill_payout_using_currency():
+def calculate_first_rebill_money_from_gateway_using_currency():
     calculate_payout = select_first_rebill_currency_rate() \
                        * float(case_1_first_rebill_params['payout'])
     return calculate_payout
 
 
-def select_user_base_coefficient():
+def select_first_rebill_user_id():
+    cursor = connection.cursor()
+    select_first_rebill_user_id = "SELECT user_id " \
+                                  "FROM rebill " \
+                                  "WHERE click_id = {} " \
+                                  "AND external_message_id = '{}'".format(used_click_for_subscription,
+                                                                          case_1_first_rebill_params[
+                                                                              'external_message_id'])
+    cursor.execute(select_first_rebill_user_id)
+    first_rebill_user_id_cortage = cursor.fetchall()
+    first_rebill_user_id_row = first_rebill_user_id_cortage[0]
+    return first_rebill_user_id_row[0]
 
 
+def select_first_rebill_user_base_coefficient():
+    cursor = connection.cursor()
+    select_user_base_coefficient = "SELECT base_coefficient " \
+                                   "FROM \"user\" " \
+                                   "WHERE id = {}".format(select_first_rebill_user_id())
+    cursor.execute(select_user_base_coefficient)
+    base_coefficient_cortage = cursor.fetchall()
+    base_coefficient = base_coefficient_cortage[0]
+    return base_coefficient[0]
 
-# if case_1_first_rebill_params['currency']:
-    # print("true")
-# print(first_rebill_external_message_id())
+
+if calculate_first_rebill_money_from_gateway_using_currency() == float(case_1_first_rebill_params['payout']) * select_first_rebill_currency_rate():
+    print('money_from_gateway true')
+else:
+    print('money_from_gateway false')
+
+
+def select_first_rebill_is_payout_received():
+    cursor = connection.cursor()
+    select_is_payout_received = "SELECT is_payout_received " \
+                                "FROM rebill " \
+                                "WHERE click_id = {} " \
+                                "AND external_message_id = '{}'".format(used_click_for_subscription,
+                                                                        case_1_first_rebill_params[
+                                                                            'external_message_id'])
+    cursor.execute(select_is_payout_received)
+    is_payout_received_cortage = cursor.fetchall()
+    is_payout_received = is_payout_received_cortage[0]
+    return is_payout_received[0]
+
+
+def check_key_value():
+    is_payout = 'payout' in case_1_first_rebill_params
+    return is_payout
+
+if select_first_rebill_is_payout_received() == check_key_value():
+    print('is_payout_received true')
+else:
+    print('is_payout_received false')

@@ -22,7 +22,7 @@ case_1_second_rebill_params = {'partner': 'test',
                                'text_uniq_lead': used_click_for_subscription + 'q3',
                                'subscr': used_click_for_subscription + 'w1',
                                'currency': 'EUR',
-                               'payout': '1.5',  # 1 EUR = 1,5 EUR
+                               'payout': '1.5',  # 1 EUR = 1 EUR
                                'extra_param': 'rebill_2'}
 
 """With payout and without currency"""
