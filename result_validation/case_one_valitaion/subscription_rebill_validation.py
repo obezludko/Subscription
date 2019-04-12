@@ -189,25 +189,11 @@ def calculate_first_rebill_money_from_gateway_using_currency():
     return calculate_payout
 
 
-def select_first_rebill_user_id():
-    cursor = connection.cursor()
-    select_first_rebill_user_id = "SELECT user_id " \
-                                  "FROM rebill " \
-                                  "WHERE click_id = {} " \
-                                  "AND external_message_id = '{}'".format(used_click_for_subscription,
-                                                                          case_1_first_rebill_params[
-                                                                              'external_message_id'])
-    cursor.execute(select_first_rebill_user_id)
-    first_rebill_user_id_cortage = cursor.fetchall()
-    first_rebill_user_id_row = first_rebill_user_id_cortage[0]
-    return first_rebill_user_id_row[0]
-
-
 def select_first_rebill_user_base_coefficient():
     cursor = connection.cursor()
     select_user_base_coefficient = "SELECT base_coefficient " \
                                    "FROM \"user\" " \
-                                   "WHERE id = {}".format(select_first_rebill_user_id())
+                                   "WHERE id = {}".format(save_first_rebill[3])
     cursor.execute(select_user_base_coefficient)
     base_coefficient_cortage = cursor.fetchall()
     base_coefficient = base_coefficient_cortage[0]
@@ -238,7 +224,32 @@ def check_key_value():
     is_payout = 'payout' in case_1_first_rebill_params
     return is_payout
 
+
 if select_first_rebill_is_payout_received() == check_key_value():
     print('is_payout_received true')
 else:
     print('is_payout_received false')
+
+
+if save_first_rebill[17] == case_1_first_rebill_params['extra_param']:
+    print('First rebill extra_param true')
+else:
+    print('First rebill extra_param false')
+
+
+"""Validate user role"""
+def select_first_rebill_user_role():
+    cursor = connection.cursor()
+    select_user_role = "SELECT role " \
+                       "FROM \"user\" " \
+                       "WHERE id = {}".format(save_first_rebill[3])
+    cursor.execute(select_user_role)
+    user_role_cortage = cursor.fetchall()
+    user_role = user_role_cortage[0]
+    return user_role[0]
+
+if select_first_rebill_user_role() == save_first_rebill[18]:
+    print('user_role true')
+else:
+    print('user_role false')
+
