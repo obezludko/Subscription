@@ -104,7 +104,10 @@ else:
     print('extra_param false')
 
 
-"""First rebill validation makes here"""
+"""=====================================================================================
+========================================================================================
+========================================================================================
+From this place we start validate first created rebill"""
 
 
 def select_created_first_rebill():
@@ -119,7 +122,7 @@ def select_created_first_rebill():
     first_rebill_row = first_rebill_cortage[0]
     return first_rebill_row
 
-"""Save selected subscription data into variable"""
+"""Save selected first rebill data into variable"""
 save_first_rebill = select_created_first_rebill()
 
 """Select click_id and validate it"""
@@ -171,7 +174,7 @@ else:
     print('First rebill external_subscription_id false')
 
 
-"""Validate payout parameters"""
+"""Validate related with money parameters"""
 def select_first_rebill_currency_rate():
     cursor = connection.cursor()
     select_currency_rate_query = "SELECT rate " \
@@ -182,13 +185,13 @@ def select_first_rebill_currency_rate():
     first_rebill_row = rate_cortage[0]
     return first_rebill_row[0]
 
-
+"""Calculate money_from_gateway using currency rate"""
 def calculate_first_rebill_money_from_gateway_using_currency():
     calculate_payout = select_first_rebill_currency_rate() \
                        * float(case_1_first_rebill_params['payout'])
     return calculate_payout
 
-
+"""Define user base coefficient"""
 def select_first_rebill_user_base_coefficient():
     cursor = connection.cursor()
     select_user_base_coefficient = "SELECT base_coefficient " \
@@ -199,11 +202,11 @@ def select_first_rebill_user_base_coefficient():
     base_coefficient = base_coefficient_cortage[0]
     return base_coefficient[0]
 
-
+"""Validate money_from_gateway"""
 if calculate_first_rebill_money_from_gateway_using_currency() == float(case_1_first_rebill_params['payout']) * select_first_rebill_currency_rate():
-    print('money_from_gateway true')
+    print('First rebill money_from_gateway true')
 else:
-    print('money_from_gateway false')
+    print('First rebill money_from_gateway false')
 
 
 def select_first_rebill_is_payout_received():
@@ -226,9 +229,9 @@ def check_key_value():
 
 
 if select_first_rebill_is_payout_received() == check_key_value():
-    print('is_payout_received true')
+    print('First rebill is_payout_received true')
 else:
-    print('is_payout_received false')
+    print('First rebill is_payout_received false')
 
 
 if save_first_rebill[17] == case_1_first_rebill_params['extra_param']:
@@ -249,7 +252,8 @@ def select_first_rebill_user_role():
     return user_role[0]
 
 if select_first_rebill_user_role() == save_first_rebill[18]:
-    print('user_role true')
+    print('First rebill user_role true')
 else:
-    print('user_role false')
+    print('First rebill user_role false')
+
 
