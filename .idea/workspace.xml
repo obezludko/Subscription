@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2017c7f6-7f8d-45be-9aed-1f43df0b0273" name="Default Changelist" comment="subscriptin and first rebill validation improvements">
+    <list default="true" id="2017c7f6-7f8d-45be-9aed-1f43df0b0273" name="Default Changelist" comment="second and third rebills validation improvement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,17 +12,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60552764">
+    <splitter split-orientation="horizontal" split-proportion="0.66896987">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="508">
-                  <caret line="639" column="10" lean-forward="true" selection-start-line="639" selection-start-column="10" selection-end-line="639" selection-end-column="10" />
+                <state relative-caret-position="575">
+                  <caret line="812" lean-forward="true" selection-start-line="812" selection-end-line="812" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1952954906/builtins.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="174">
+                  <caret line="512" column="4" selection-start-line="512" selection-start-column="4" selection-end-line="512" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -35,8 +43,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="29" column="26" selection-start-line="29" selection-end-line="29" selection-end-column="26" />
+                <state relative-caret-position="575">
+                  <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
                 </state>
               </provider>
             </entry>
@@ -55,6 +63,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>money_from_ga</find>
+      <find>receiver</find>
+      <find>is_payout_received</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,12 +84,12 @@
         <option value="$PROJECT_DIR$/parameters/subscription/case_1/subsciption_params.py" />
         <option value="$PROJECT_DIR$/action/case_one_subscription_rebill_cancel.py" />
         <option value="$PROJECT_DIR$/connection/connection_variables.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/result_validation/case_one_validation.py" />
         <option value="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_validation.py" />
         <option value="$PROJECT_DIR$/result_validation/case_one_valitaion/rebill_validation.py" />
         <option value="$PROJECT_DIR$/result_validation/subscription_validation.py" />
         <option value="$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py" />
       </list>
     </option>
@@ -340,8 +350,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555328066235</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="second and third rebills validation improvement">
+      <created>1555330053186</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1555330053186</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -353,16 +379,16 @@
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22318527" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17334779" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.53954494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2524377" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.29252437" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -372,7 +398,8 @@
     <MESSAGE value="one two" />
     <MESSAGE value="rebill validation starts" />
     <MESSAGE value="subscriptin and first rebill validation improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="subscriptin and first rebill validation improvements" />
+    <MESSAGE value="second and third rebills validation improvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="second and third rebills validation improvement" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/parameters/subscription/case_1.py" />
@@ -442,13 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parameters/subscription/case_1/subsciption_params.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -463,17 +483,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="100" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="29" column="26" selection-start-line="29" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="575">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1952954906/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="512" column="4" selection-start-line="512" selection-start-column="4" selection-end-line="512" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="639" column="10" lean-forward="true" selection-start-line="639" selection-start-column="10" selection-end-line="639" selection-end-column="10" />
+        <state relative-caret-position="575">
+          <caret line="812" lean-forward="true" selection-start-line="812" selection-end-line="812" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
