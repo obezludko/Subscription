@@ -42,9 +42,9 @@ def subscription_click_id():
 
 
 if case_1_subscription_params['click_id'] == subscription_click_id():
-    print('click_id true')
+    print('subscription_click_id true')
 else:
-    print('click_id false')
+    print('subscription_click_id false')
 
 """Select subscription_external_message_id and validate it after"""
 def subscription_external_message_id():
@@ -53,9 +53,9 @@ def subscription_external_message_id():
 
 
 if case_1_subscription_params['external_message_id'] == subscription_external_message_id():
-    print('external_message_id true')
+    print('subscription_external_message_id true')
 else:
-    print('external_message_id false')
+    print('subscription_external_message_id false')
 
 """Select gateway_id for validation after"""
 def define_subscription_gateway_id():
@@ -77,9 +77,9 @@ def subscription_gateway_id():
 
 
 if define_subscription_gateway_id() == subscription_gateway_id():
-    print('partner true')
+    print('subscription_partner true')
 else:
-    print('partner false')
+    print('subscription_partner false')
 
 """Select subscription_external_subscription_id and validate it"""
 def subscription_external_subscription_id():
@@ -88,9 +88,9 @@ def subscription_external_subscription_id():
 
 
 if case_1_subscription_params['external_subscription_id'] == subscription_external_subscription_id():
-    print('external_subscription_id true')
+    print('subscription_external_subscription_id true')
 else:
-    print('external_subscription_id false')
+    print('subscription_external_subscription_id false')
 
 """Select extra_param and validate it"""
 def select_extra_param():
@@ -99,9 +99,55 @@ def select_extra_param():
 
 
 if case_1_subscription_params['extra_param'] == select_extra_param():
-    print('extra_param true')
+    print('subscription_extra_param true')
 else:
-    print('extra_param false')
+    print('subscription_extra_param false')
+
+
+"""Select and validate subscription user_role"""
+def select_subscription_user_role():
+    cursor = connection.cursor()
+    select_subscription_user_role = "SELECT role " \
+                       "FROM \"user\" " \
+                       "WHERE id = {}".format(save_subscription_parameters[18])
+    cursor.execute(select_subscription_user_role)
+    subscription_user_role_cortage = cursor.fetchall()
+    subscription_user_role = subscription_user_role_cortage[0]
+    return subscription_user_role[0]
+
+
+if select_subscription_user_role() == save_subscription_parameters[16]:
+    print("subscription_user_role true")
+else:
+    print("subscription_user_role false")
+
+"""Validate closed_at"""
+if save_subscription_parameters[7] == None:
+    print('subscription closed_at true')
+else:
+    print('subscription closed_at false')
+
+
+"""Validate is_hidden"""
+if save_subscription_parameters[13] == False:
+    print("Subscription is_hidden is checked. Test was passed")
+else:
+    print("Subscription is_hidden is checked. Test wasn't passed")
+
+
+"""Validate subscription access_period"""
+if save_subscription_parameters[10] == 0:
+    print('Subscription access_period true')
+else:
+    print('Subscription access_period false')
+
+
+"""Validate subscription is_hidden"""
+if save_subscription_parameters[13] == False:
+    print("Subscription is_hidden = False. Test was passed")
+else:
+    print("Subscription is_hidden = True. Test wasn't passed")
+
 
 
 """=====================================================================================
