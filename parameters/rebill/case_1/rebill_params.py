@@ -27,7 +27,7 @@ case_1_second_rebill_params = {'partner': 'test',
 
 """With payout and without currency"""
 
-case_1_third_rebill_params = {'partner': 'test',
+case_1_third_rebill_params = {'partner': 'eboy',
                               'action': 'BILLING',  # one of 2 rebill actions(rebill,BILLING)
                               'click_id': used_click_for_subscription,
                               'text_uniq_lead': used_click_for_subscription + 'q4',
@@ -37,7 +37,7 @@ case_1_third_rebill_params = {'partner': 'test',
 
 """Without payout and currency"""
 
-case_1_fourth_rebill_params = {'partner': 'test',
+case_1_fourth_rebill_params = {'partner': 'eboy',
                                'action': 'BILLING',  # one of 2 rebill actions(rebill,BILLING)
                                'click_id': used_click_for_subscription,
                                'text_uniq_lead': used_click_for_subscription + 'q5',
