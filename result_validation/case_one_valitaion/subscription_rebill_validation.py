@@ -823,7 +823,9 @@ time.sleep(1)
 
 def select_subscription_closed_at():
     cursor = connection.cursor()
-    closed_at_query = "SELECT closed_at FROM subscription WHERE click_id = {}".format(used_click_for_subscription)
+    closed_at_query = "SELECT closed_at " \
+                      "FROM subscription " \
+                      "WHERE click_id = {}".format(used_click_for_subscription)
     cursor.execute(closed_at_query)
     closed_at_cortage = cursor.fetchall()
     closed_at = closed_at_cortage[0]

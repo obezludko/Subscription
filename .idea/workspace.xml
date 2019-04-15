@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2017c7f6-7f8d-45be-9aed-1f43df0b0273" name="Default Changelist" comment="second and third rebills validation improvement">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2017c7f6-7f8d-45be-9aed-1f43df0b0273" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,14 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.66896987">
+    <splitter split-orientation="horizontal" split-proportion="0.5807074">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="812" lean-forward="true" selection-start-line="812" selection-end-line="812" />
+                <state relative-caret-position="560">
+                  <caret line="836" column="57" selection-start-line="836" selection-start-column="57" selection-end-line="836" selection-end-column="57" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -27,24 +26,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1952954906/builtins.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="174">
-                  <caret line="512" column="4" selection-start-line="512" selection-start-column="4" selection-end-line="512" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+                <state relative-caret-position="583">
+                  <caret line="45" selection-start-line="45" selection-end-line="45" />
                 </state>
               </provider>
             </entry>
@@ -80,7 +70,6 @@
         <option value="$PROJECT_DIR$/parameters/subscription/case_1/subsciption_action.py" />
         <option value="$PROJECT_DIR$/action/rebill.py" />
         <option value="$PROJECT_DIR$/action/subscription.py" />
-        <option value="$PROJECT_DIR$/parameters/cancel/case_1/cancel_params.py" />
         <option value="$PROJECT_DIR$/parameters/subscription/case_1/subsciption_params.py" />
         <option value="$PROJECT_DIR$/action/case_one_subscription_rebill_cancel.py" />
         <option value="$PROJECT_DIR$/connection/connection_variables.py" />
@@ -90,6 +79,7 @@
         <option value="$PROJECT_DIR$/result_validation/subscription_validation.py" />
         <option value="$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/parameters/cancel/case_1/cancel_params.py" />
         <option value="$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py" />
       </list>
     </option>
@@ -118,6 +108,37 @@
               <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
               <item name="Subscription" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="parameters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="parameters" type="462c0819:PsiDirectoryNode" />
+              <item name="cancel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="parameters" type="462c0819:PsiDirectoryNode" />
+              <item name="cancel" type="462c0819:PsiDirectoryNode" />
+              <item name="case_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="parameters" type="462c0819:PsiDirectoryNode" />
+              <item name="rebill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="parameters" type="462c0819:PsiDirectoryNode" />
+              <item name="rebill" type="462c0819:PsiDirectoryNode" />
+              <item name="case_1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
@@ -357,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1555330053186</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="second and third rebills validation improvement">
+      <created>1555336144177</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555336144177</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fourth rebill validation and unsubscription improvements">
+      <created>1555337193236</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555337193236</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -373,13 +408,13 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18071654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17334779" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20476706" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.53954494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,7 +434,8 @@
     <MESSAGE value="rebill validation starts" />
     <MESSAGE value="subscriptin and first rebill validation improvements" />
     <MESSAGE value="second and third rebills validation improvement" />
-    <option name="LAST_COMMIT_MESSAGE" value="second and third rebills validation improvement" />
+    <MESSAGE value="fourth rebill validation and unsubscription improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth rebill validation and unsubscription improvements" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/parameters/subscription/case_1.py" />
@@ -462,13 +498,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/rebill_validation.py" />
-    <entry file="file://$PROJECT_DIR$/parameters/cancel/case_1/cancel_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="20" selection-start-line="4" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parameters/subscription/case_1/subsciption_params.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -490,13 +519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/1952954906/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -504,10 +526,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parameters/cancel/case_1/cancel_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameters/rebill/case_1/rebill_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="812" lean-forward="true" selection-start-line="812" selection-end-line="812" />
+        <state relative-caret-position="560">
+          <caret line="836" column="57" selection-start-line="836" selection-start-column="57" selection-end-line="836" selection-end-column="57" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
