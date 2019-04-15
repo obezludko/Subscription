@@ -4,7 +4,8 @@ from action.case_one_subscription_rebill_cancel import case_one_subscription,\
     case_one_first_rebill, \
     case_one_second_rebill, \
     case_one_third_rebill, \
-    case_one_fourth_rebill
+    case_one_fourth_rebill, \
+    case_one_cancel
 from connection.connection_variables import pg_user, \
     pg_password, \
     pg_host, \
@@ -810,3 +811,25 @@ if select_fourth_rebill_user_role() == save_fourth_rebill[18]:
     print('fourth rebill user_role true')
 else:
     print('fourth rebill user_role false')
+
+"""Validate Unsubscription"""
+if save_subscription_parameters[7] == None:
+    print("Subscription is still opened. Initiate unsubscription.")
+    case_one_cancel()
+else:
+    print("Subscription is closed already.")
+
+time.sleep(1)
+
+def select_subscription_closed_at():
+    cursor = connection.cursor()
+    closed_at_query = "SELECT closed_at FROM subscription WHERE click_id = {}".format(used_click_for_subscription)
+    cursor.execute(closed_at_query)
+    closed_at_cortage = cursor.fetchall()
+    closed_at = closed_at_cortage[0]
+    return closed_at[0]
+
+if select_subscription_closed_at() != None:
+    print("Subscribtion is closed. Unsubscription test was passed.")
+else:
+    print("Subscribtion isn't closed. Unsubscription test wasn't passed.")
