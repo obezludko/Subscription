@@ -1,15 +1,16 @@
 from click_sub.click import parse_url_and_append_click
 
-"""Case presents not valid parameters for creating subscription"""
+"""Case presents not valid parameters for creating subscription. 
+After test running subscriptions won't be created"""
 
 used_click_for_subscription = parse_url_and_append_click()
 
 case_2_first_subscription_params = {'partner': 'test',
-                                    'action': 'init',                                                    # one of 3 action subscribe action(subscribe,SUBSCRIBE, init)
+                                    'action': 'init',  # one of 3 action subscribe action(subscribe,SUBSCRIBE, init)
                                     'click_id': used_click_for_subscription,
-                                    'external_message_id': used_click_for_subscription + 'q1',           # text_uniq_lead || external_message_id
-                                    'external_subscription_id': used_click_for_subscription + 'w1',      # external_subscription_id || subscr
-                                    'currency': 'usd',                                                   # writed in low register currency haven't pass
+                                    'external_message_id': used_click_for_subscription + 'q1',  # text_uniq_lead || external_message_id
+                                    'external_subscription_id': used_click_for_subscription + 'w1',  # external_subscription_id || subscr
+                                    'currency': 'usd',  # writed in lowercase currency haven't pass
                                     'extra_param': 'subTWO123'}
 
 case_2_second_subscription_params = {'partner': 'test',
@@ -19,7 +20,7 @@ case_2_second_subscription_params = {'partner': 'test',
                                      'external_subscription_id': used_click_for_subscription + 'w2'}
 
 case_2_third_subscription_params = {'partner': 'test',
-                                    'action': 'UNKNOWN', # UNKNOWN action
+                                    'action': 'UNKNOWN',  # UNKNOWN action
                                     'click_id': used_click_for_subscription,
                                     'external_message_id': used_click_for_subscription + 'q3',
                                     'external_subscription_id': used_click_for_subscription + 'w3'}
@@ -46,10 +47,10 @@ case_2_sixth_subscription_params = {'partner': '',  # blank partner parameter
                                     'subscr': used_click_for_subscription + 'w6'
                                     }
 
-case_2_seventh_subscription_params = {'partner':'test',
-                                      'action':'subscribe',
+case_2_seventh_subscription_params = {'partner': 'test',
+                                      'action': 'subscribe',
                                       'click_id': used_click_for_subscription,
-                                      'external_massage_id':used_click_for_subscription + 'q7',
+                                      'external_message_id': used_click_for_subscription + 'q7',
                                       'external_subscription_id': used_click_for_subscription + 'w7',
                                       'extra_param': '12345678901234567890123456'  # 26 symbols (parameter expects !>25)
                                       }
