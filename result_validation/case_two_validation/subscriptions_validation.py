@@ -17,8 +17,8 @@ connection = psycopg2.connect(database=pg_database,
 
 # case_two_first_subscription()
 # case_two_second_subscription()
-case_two_third_subscription()
-# case_two_fourth_subscription()
+# case_two_third_subscription()
+case_two_fourth_subscription()
 # case_two_fifth_subscription()
 # case_two_sixth_subscription()
 # case_two_seventh_subscription()
