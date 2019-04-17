@@ -16,19 +16,16 @@ connection = psycopg2.connect(database=pg_database,
                               port=pg_port)
 
 """Run negative GET requests, that have't create any subscriptions. 
-After running define sleep time"""
-case_two_first_subscription()
-case_two_second_subscription()
-case_two_third_subscription()
-case_two_fourth_subscription()
-case_two_fifth_subscription()
-case_two_sixth_subscription()
-case_two_seventh_subscription()
-
-time.sleep(4)
-
-
-def select_created_subscription():
+After running define sleep time. Trying to select something after that."""
+def select_uncreated_subscription():
+    case_two_first_subscription()
+    case_two_second_subscription()
+    case_two_third_subscription()
+    case_two_fourth_subscription()
+    case_two_fifth_subscription()
+    case_two_sixth_subscription()
+    case_two_seventh_subscription()
+    time.sleep(4)
     cursor = connection.cursor()
     subscription_select_query = "SELECT * " \
                                 "FROM subscription " \
@@ -43,7 +40,7 @@ def select_created_subscription():
     subscription_cortage = cursor.fetchall()
     return subscription_cortage
 
-if select_created_subscription() == []:
+if select_uncreated_subscription() == []:
     print('Nothing is created. Test is passed.')
 else:
     print('Something is created. Test is failed.')
