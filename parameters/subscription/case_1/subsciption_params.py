@@ -12,5 +12,3 @@ case_1_subscription_params = {'partner': 'test',
                               'currency': 'ALL',                                  # 1 All = 5 EUR
                               'payout': '1',
                               'extra_param': 'subTEST123'}
-
-# print(external_message_id, '\n', external_subscription_id)
