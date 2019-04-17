@@ -43,9 +43,6 @@ def select_created_subscription():
     subscription_cortage = cursor.fetchall()
     return subscription_cortage
 
-a = select_created_subscription()
-print(type(a))
-
 if select_created_subscription() == []:
     print('Nothing is created. Test is passed.')
 else:
