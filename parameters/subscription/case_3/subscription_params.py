@@ -13,3 +13,5 @@ case_3_first_subscription_params = {'partner':'test',
                                     'pauout':'1.5',
                                     'extra_param':'case 3 SUB'
                                     }
+
+case_3_first_rebill_params = {}

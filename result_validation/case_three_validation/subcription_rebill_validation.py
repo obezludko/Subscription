@@ -82,7 +82,37 @@ else:
 
 
 """Select and validate subscription user_role"""
+def select_subscription_user_role():
+    cursor = connection.cursor()
+    select_subscription_user_role = "SELECT role " \
+                                    "FROM \"user\" " \
+                                    "WHERE id = {}".format(save_subscription_parameters[18])
+    cursor.execute(select_subscription_user_role)
+    subscription_user_role_cortage = cursor.fetchall()
+    subscription_user_role = subscription_user_role_cortage[0]
+    return subscription_user_role[0]
+
+if select_subscription_user_role() == save_subscription_parameters[16]:
+    print("Subscription user_role true")
+else:
+    print("Subscription user_role false")
+
+"""Check closed_at field"""
+if save_subscription_parameters[7] == None:
+    print("Subscription is opened. Test passed")
+else:
+    print("Subscription is closed. Test passed")
 
 
-# a = define_subscription_gateway_id()
-# print(type(a))
+"""Validate subscription is_hiden"""
+if save_subscription_parameters[13] == False:
+    print("Subscription is hidden = false. Test was passed")
+else:
+    print("Subscription is_hidden = true. Test was passed")
+
+
+"""
+========================================================================================
+From this place we validate rebills, that hasn't create
+========================================================================================
+"""
