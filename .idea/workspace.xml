@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2017c7f6-7f8d-45be-9aed-1f43df0b0273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/action/case_three_subscription_rebills.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result_validation/case_three_validation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5498392">
+    <splitter split-orientation="horizontal" split-proportion="0.5453376">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -30,7 +27,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/action/case_three_subscription_rebills.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
+                <state relative-caret-position="126">
                   <caret line="8" selection-start-line="8" selection-end-line="8" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
@@ -42,8 +39,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+                <state relative-caret-position="540">
+                  <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -76,8 +73,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_cancel_validation.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="77" column="48" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="48" />
+                <state relative-caret-position="147">
+                  <caret line="103" column="55" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="55" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -150,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,6 +212,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -502,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555503340110</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="third case running and validation">
+      <created>1555513357367</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1555513357367</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -524,7 +528,7 @@
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3109426" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2340195" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.53954494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,7 +551,8 @@
     <MESSAGE value="fourth rebill validation and unsubscription improvements" />
     <MESSAGE value="second case validation" />
     <MESSAGE value="second case running and validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="second case running and validation" />
+    <MESSAGE value="third case running and validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="third case running and validation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/parameters/subscription/case_1.py" />
@@ -661,6 +666,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/case_three_subscription_rebills.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/action/case_two_subscriptions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -675,27 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action/case_three_subscription_rebills.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result_validation/case_one_valitaion/subscription_rebill_cancel_validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="77" column="48" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="48" />
+        <state relative-caret-position="147">
+          <caret line="103" column="55" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="55" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -704,8 +709,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        <state relative-caret-position="540">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

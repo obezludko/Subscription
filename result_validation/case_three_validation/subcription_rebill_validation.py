@@ -60,5 +60,29 @@ def define_subscription_gateway_id():
     gateway_id = gateway_id_cortage[0]
     return str(gateway_id[0])
 
-a = define_subscription_gateway_id()
-print(type(a))
+
+if define_subscription_gateway_id() == str(save_subscription_parameters[17]):
+    print("Subscription partner true.")
+else:
+    print("Subscription partner false")
+
+
+"""Validate external_subscription_id"""
+if case_3_first_subscription_params["external_subscription_id"] == save_subscription_parameters[2]:
+    print("external_subscription_id true")
+else:
+    print("external_subscription_id false")
+
+
+"""Select subscription extra_param and validate it"""
+if case_3_first_subscription_params["extra_param"] == save_subscription_parameters[15]:
+    print("Subscription extra_param true")
+else:
+    print("Subscription extra_param false")
+
+
+"""Select and validate subscription user_role"""
+
+
+# a = define_subscription_gateway_id()
+# print(type(a))
