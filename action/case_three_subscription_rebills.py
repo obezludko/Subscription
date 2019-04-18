@@ -1,6 +1,7 @@
 import requests
 from connection.connection_variables import link
 from parameters.subscription.case_3.subscription_params import *
+from parameters.rebill.case_3.rebills_params import *
 
 
 def case_three_first_subscription():

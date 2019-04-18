@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2017c7f6-7f8d-45be-9aed-1f43df0b0273" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/parameters/rebill/case_3/rebills_params.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/action/case_three_subscription_rebills.py" beforeDir="false" afterPath="$PROJECT_DIR$/action/case_three_subscription_rebills.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +15,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42829582">
+    <splitter split-orientation="horizontal" split-proportion="0.3954984">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/action/case_three_subscription_rebills.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="519">
-                  <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+                <state relative-caret-position="63">
+                  <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -31,11 +46,32 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="372">
-                  <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="19" />
+                <state relative-caret-position="315">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/parameters/rebill/case_3/rebills_params.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-392">
+                  <caret column="90" selection-start-column="90" selection-end-column="90" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/result_validation/case_two_validation/subscriptions_validation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="7">
+                  <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -86,10 +122,11 @@
         <option value="$PROJECT_DIR$/action/case_two_subscriptions.py" />
         <option value="$PROJECT_DIR$/result_validation/case_two_validation/subscriptions_validation.py" />
         <option value="$PROJECT_DIR$/result_validation/case_three_validation/subdcription_rebill_validation.py" />
-        <option value="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" />
         <option value="$PROJECT_DIR$/parameters/subscription/case_2/subscription_params.py" />
-        <option value="$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py" />
+        <option value="$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py" />
         <option value="$PROJECT_DIR$/action/case_three_subscription_rebills.py" />
+        <option value="$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py" />
+        <option value="$PROJECT_DIR$/parameters/rebill/case_3/rebills_params.py" />
       </list>
     </option>
   </component>
@@ -131,21 +168,20 @@
               <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
               <item name="Subscription" type="462c0819:PsiDirectoryNode" />
               <item name="parameters" type="462c0819:PsiDirectoryNode" />
-              <item name="subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="rebill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
+              <item name="parameters" type="462c0819:PsiDirectoryNode" />
+              <item name="rebill" type="462c0819:PsiDirectoryNode" />
+              <item name="case_3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
               <item name="Subscription" type="462c0819:PsiDirectoryNode" />
               <item name="parameters" type="462c0819:PsiDirectoryNode" />
               <item name="subscription" type="462c0819:PsiDirectoryNode" />
-              <item name="case_1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
-              <item name="parameters" type="462c0819:PsiDirectoryNode" />
-              <item name="subscription" type="462c0819:PsiDirectoryNode" />
-              <item name="case_2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
@@ -153,17 +189,6 @@
               <item name="parameters" type="462c0819:PsiDirectoryNode" />
               <item name="subscription" type="462c0819:PsiDirectoryNode" />
               <item name="case_3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
-              <item name="result_validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Subscription" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
-              <item name="result_validation" type="462c0819:PsiDirectoryNode" />
-              <item name="case_three_validation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -491,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555590103413</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="third case running and validation">
+      <created>1555590718794</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1555590718794</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -513,7 +545,7 @@
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2340195" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3716143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.53954494" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -627,16 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result_validation/case_two_validation/subscriptions_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="71" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/action/case_two_subscriptions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -661,16 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="117" column="3" lean-forward="true" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connection/connection_variables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -685,17 +697,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py">
+    <entry file="file://$PROJECT_DIR$/action/case_three_subscription_rebills.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="19" />
+        <state relative-caret-position="63">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/action/case_three_subscription_rebills.py">
+    <entry file="file://$PROJECT_DIR$/result_validation/case_two_validation/subscriptions_validation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="7">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameters/subscription/case_3/subscription_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameters/rebill/case_3/rebills_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret column="90" selection-start-column="90" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_validation/case_three_validation/subcription_rebill_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="115" column="34" lean-forward="true" selection-start-line="115" selection-start-column="34" selection-end-line="115" selection-end-column="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

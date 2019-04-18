@@ -6,8 +6,7 @@ from connection.connection_variables import pg_user,\
     pg_host, \
     pg_port, \
     pg_database
-from parameters.subscription.case_3.subscription_params import \
-    used_click_for_subscription, case_3_first_subscription_params
+from parameters.subscription.case_3.subscription_params import *
 
 
 """Connect to database using connection variables"""
@@ -116,3 +115,13 @@ else:
 From this place we validate rebills, that hasn't create
 ========================================================================================
 """
+
+case_three_first_rebill()
+# case_three_second_rebill()
+# case_three_third_rebill()
+# case_three_fourth_rebill()
+# case_three_fifth_rebill()
+# case_three_sixth_rebill()
+# case_three_seventh_rebill()
+# case_three_eighth_rebill()
+# case_three_ninth_rebill()
