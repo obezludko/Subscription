@@ -10,8 +10,9 @@ case_2_first_subscription_params = {'partner': 'test',
                                     'click_id': used_click_for_subscription,
                                     'external_message_id': used_click_for_subscription + 'q1',  # text_uniq_lead || external_message_id
                                     'external_subscription_id': used_click_for_subscription + 'w1',  # external_subscription_id || subscr
-                                    'currency': 'usd',  # writed in lowercase currency haven't pass
+                                    'currency': 'usd',  # writed in lowercase currency hasn't pass
                                     'extra_param': 'subTWO123'}
+
 
 case_2_second_subscription_params = {'partner': 'test',
                                      'action': 'SUBSCRIBE',
@@ -19,19 +20,22 @@ case_2_second_subscription_params = {'partner': 'test',
                                      'external_message_id': used_click_for_subscription + 'q2',
                                      'external_subscription_id': used_click_for_subscription + 'w2'}
 
+
 case_2_third_subscription_params = {'partner': 'test',
                                     'action': 'UNKNOWN',  # UNKNOWN action
                                     'click_id': used_click_for_subscription,
                                     'external_message_id': used_click_for_subscription + 'q3',
                                     'external_subscription_id': used_click_for_subscription + 'w3'}
 
+
 case_2_fourth_subscription_params = {'partner': 'eboy',
                                      'action': 'subscribe',
                                      'click_id': used_click_for_subscription,
                                      'text_uniq_lead': used_click_for_subscription + 'q4',
                                      'subscr': used_click_for_subscription + 'w4',
-                                     'payout': '0,1'  # the payout must be a number.
+                                     'payout': '0,1'  # Payout must be a number.
                                      }
+
 
 case_2_fifth_subscription_params = {'partner': 'alavala666',  # partner don't exist
                                     'action': 'init',
@@ -40,12 +44,14 @@ case_2_fifth_subscription_params = {'partner': 'alavala666',  # partner don't ex
                                     'subscr': used_click_for_subscription + 'w5'
                                     }
 
+
 case_2_sixth_subscription_params = {'partner': '',  # blank partner parameter
                                     'action': 'init',
                                     'click_id': used_click_for_subscription,
                                     'external_message_id': used_click_for_subscription + 'q6',
                                     'subscr': used_click_for_subscription + 'w6'
                                     }
+
 
 case_2_seventh_subscription_params = {'partner': 'test',
                                       'action': 'subscribe',
