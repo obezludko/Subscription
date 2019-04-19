@@ -11,6 +11,7 @@ subs = {'sub2': generate_sub('SuB2'),
 
 link = 'http://159.69.25.152/go?id=735&hash=TvRcta7Cvh'
 
+
 """Send request using link variables and generated in subs_generator subs"""
 
 
@@ -26,6 +27,3 @@ def parse_url_and_append_click():
     parsed_url = urlparse(url_response)
     click_id = parsed_url.path[1:]
     return click_id
-
-
-# print(type(parse_url_and_append_click()))
