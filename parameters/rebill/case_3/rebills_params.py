@@ -16,7 +16,7 @@ case_3_second_rebill_params = {'partner': 'test',
                                'click_id': used_click_for_subscription,
                                'external_message_id': used_click_for_subscription + 'q3',
                                'external_subscription_id': used_click_for_subscription + 'w1',
-                               'currency': 'all',  # Writed in lowercase currency hasn't pass
+                               'currency': 'all',  # Written in lowercase currency hasn't pass
                                'payout': '1',
                                'extra_param': 'REBill 2'
                                }
@@ -24,7 +24,7 @@ case_3_second_rebill_params = {'partner': 'test',
 case_3_third_rebill_params = {'partner': 'test',
                               'action': 'rebill',
                               'click_id': used_click_for_subscription,
-                              'text_uniq_lead': used_click_for_subscription + 'q1',  # not unique external_message_id
+                              # Without external_message_id
                               'subscr': used_click_for_subscription + 'w1',
                               'extra_param': 'REBill 3'
                               }

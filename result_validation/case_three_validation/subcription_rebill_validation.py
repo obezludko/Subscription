@@ -6,7 +6,9 @@ from connection.connection_variables import pg_user,\
     pg_host, \
     pg_port, \
     pg_database
-from parameters.subscription.case_3.subscription_params import *
+from parameters.subscription.case_3.subscription_params import used_click_for_subscription, \
+    case_3_first_subscription_params
+from parameters.rebill.case_3.rebills_params import *
 
 
 """Connect to database using connection variables"""
@@ -16,12 +18,11 @@ connection = psycopg2.connect(database=pg_database,
                               host=pg_host,
                               port=pg_port)
 
-case_three_first_subscription()  # Action subscription makes here
 
-"""Define sleeping time"""
-define_sleep = time.sleep(2)
 
 def select_created_subscription():
+    case_three_first_subscription()  # Subscription creates here
+    time.sleep(2)
     cursor = connection.cursor()
     subscription_select_query = "SELECT * " \
                                 "FROM subscription " \
@@ -33,6 +34,7 @@ def select_created_subscription():
 
 """Save selected subscription data into variable"""
 save_subscription_parameters = select_created_subscription()
+
 
 """Validate subscription click_id"""
 if case_3_first_subscription_params['click_id'] == str(used_click_for_subscription):
@@ -116,12 +118,34 @@ From this place we validate rebills, that hasn't create
 ========================================================================================
 """
 
-case_three_first_rebill()
-# case_three_second_rebill()
-# case_three_third_rebill()
-# case_three_fourth_rebill()
-# case_three_fifth_rebill()
-# case_three_sixth_rebill()
-# case_three_seventh_rebill()
-# case_three_eighth_rebill()
-# case_three_ninth_rebill()
+
+"""Define sleeping time"""
+define_sleep = time.sleep(1)
+
+
+def select_uncreated_rebills():
+    case_three_first_rebill()
+    case_three_second_rebill()
+    case_three_third_rebill()
+    case_three_fourth_rebill()
+    case_three_fifth_rebill()
+    case_three_sixth_rebill()
+    case_three_seventh_rebill()
+    case_three_eighth_rebill()
+    case_three_ninth_rebill()
+    time.sleep(4)
+    cursor = connection.cursor()
+    rebills_select_query = "SELECT * FROM rebill " \
+                           "WHERE click_id = {}" \
+                           "OR (external_message_id = '{}')".format(used_click_for_subscription,
+                                                                          case_3_ninth_rebill_params[
+                                                                              'external_message_id'])
+    cursor.execute(rebills_select_query)
+    rebills_cortage = cursor.fetchall()
+    return rebills_cortage
+
+
+if select_uncreated_rebills() == []:
+    print("Nothing is created. Test is passed.")
+else:
+    print("Something is created. Test isn't passed.")
