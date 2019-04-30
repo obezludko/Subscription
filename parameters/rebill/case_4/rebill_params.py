@@ -5,5 +5,5 @@ case_4_first_rebill_params = {'partner': 'test',
                               'click_id': used_click_for_subscription,
                               'external_message_id': used_click_for_subscription + 'q1',
                               'external_subscription_id': used_click_for_subscription + 'w1',
-                              'extra_param': ''
+                              'extra_param': 'EXtra reb_1'
                               }

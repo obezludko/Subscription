@@ -7,7 +7,7 @@ from connection.connection_variables import pg_user, \
     pg_port, \
     pg_database
 from parameters.subscription.case_4.subscription_params import *
-# from parameters.rebill.case_4.
+# from parameters.rebill.case_4.rebill_params import *
 
 """Connect to database using connection variables"""
 connection = psycopg2.connect(database=pg_database,
@@ -31,4 +31,37 @@ def select_created_subscription():
 
 """Save selected subscription data into variable"""
 save_subscription_parameters = select_created_subscription()
-print(save_subscription_parameters)
+
+
+
+"""User_coefficient manipulation functions"""
+def close_user_offer_coefficient():
+    subscription_user_coefficient_id = save_subscription_parameters[12]
+    cursor = connection.cursor()
+    close_user_coefficient_query = "UPDATE users_sms_offers_coefficient " \
+                             "SET deleted_at = now() " \
+                             "WHERE id = {}".format(subscription_user_coefficient_id)
+    cursor.execute(close_user_coefficient_query)
+    connection.commit()
+    return cursor.close()
+
+
+def open_user_offer_coefficient():
+    subscription_user_coefficient_id = save_subscription_parameters[12]
+    cursor = connection.cursor()
+    open_user_offer_coefficient_query = "UPDATE users_sms_offers_coefficient " \
+                             "SET deleted_at = null " \
+                             "WHERE id = {}".format(subscription_user_coefficient_id)
+    cursor.execute(open_user_offer_coefficient_query)
+    connection.commit()
+    return cursor.close()
+
+
+
+# close_user_offer_coefficient()
+# open_user_offer_coefficient()
+# print()
+# offer_id = save_subscription_parameters[11]
+# print(type(offer_id))
+
+
