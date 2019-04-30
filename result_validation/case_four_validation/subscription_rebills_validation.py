@@ -86,6 +86,54 @@ else:
     print('subscription_extra_param false')
 
 
+"""Select and validate subscription user_role"""
+def select_subscription_user_role():
+    cursor = connection.cursor()
+    select_subscription_user_role = "SELECT role " \
+                       "FROM \"user\" " \
+                       "WHERE id = {}".format(save_subscription_parameters[18])
+    cursor.execute(select_subscription_user_role)
+    subscription_user_role_cortage = cursor.fetchall()
+    subscription_user_role = subscription_user_role_cortage[0]
+    return subscription_user_role[0]
+
+
+if select_subscription_user_role() == save_subscription_parameters[16]:
+    print("subscription_user_role true")
+else:
+    print("subscription_user_role false")
+
+
+"""Validate closed_at"""
+if save_subscription_parameters[7] == None:
+    print('subscription is opened. Test was passed')
+else:
+    print('subscription is closed. Test was failed')
+
+
+"""Validate is_hidden"""
+def select_user_offer_coefficient_type():
+    subscription_user_coefficient_id = save_subscription_parameters[12]
+    cursor = connection.cursor()
+    select_user_offer_coefficient_type_query = "SELECT coefficient_type " \
+                                                        "FROM users_sms_offers_coefficient " \
+                                                        "WHERE id = {}".format(subscription_user_coefficient_id)
+    cursor.execute(select_user_offer_coefficient_type_query)
+    second_rebill_user_offer_coefficient_cortage = cursor.fetchall()
+    second_rebill_user_offer_coefficient = second_rebill_user_offer_coefficient_cortage[0]
+    return second_rebill_user_offer_coefficient[0]
+
+coefficient_type = select_user_offer_coefficient_type()
+cpa_list = ["cpa_sub", "cpa_rebill"]
+
+if (coefficient_type not in cpa_list) and save_subscription_parameters[13] == False:
+    print("{} NOT IN {}. Test was passed. is_hidden = {}. Test was passed".format(coefficient_type, cpa_list,
+                                                                                  save_subscription_parameters[13]))
+else:
+    print("{} IN {}. Test was failed. \nis_hidden = {}. Test was failed".format(coefficient_type, cpa_list,
+                                                                                save_subscription_parameters[13]))
+
+
 
 """User_coefficient manipulation functions"""
 def close_user_offer_coefficient():
