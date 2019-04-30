@@ -15,3 +15,5 @@ def case_four_second_rebill():
     return requests.get(link,case_4_second_rebill_params)
 
 
+def case_four_second_subscription():
+    return requests.get(link,case_4_second_subscription_params)
