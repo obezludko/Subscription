@@ -12,11 +12,3 @@ case_4_first_subscription_params = {'partner': 'test',
                                     'extra_param': 'case 4 SUB'
                                     }
 
-
-case_4_second_subscription_params = {'partner': 'test',
-                                    'action': 'init',
-                                    'click_id': used_click_for_subscription,
-                                    'external_message_id': used_click_for_subscription + 'q40',
-                                    'external_subscription_id': used_click_for_subscription + 'w2',
-                                    'extra_param': 'case 4 SUB'
-                                    }

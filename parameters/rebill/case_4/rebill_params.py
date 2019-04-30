@@ -15,3 +15,12 @@ case_4_second_rebill_params = {'partner': 'test',
                               'external_subscription_id': used_click_for_subscription + 'w1',
                               'extra_param': 'EXtra reb_2'
                               }
+
+
+case_4_third_rebill_params = {'partner': 'test',
+                              'action': 'rebill',
+                              'click_id': used_click_for_subscription,
+                              'external_message_id': used_click_for_subscription + 'q4',
+                              'external_subscription_id': used_click_for_subscription + 'w1',
+                              'extra_param': 'EXtra reb_3'
+                              }

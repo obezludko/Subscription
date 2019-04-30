@@ -35,6 +35,57 @@ def select_created_subscription():
 save_subscription_parameters = select_created_subscription()
 
 
+"""Select subscription_click_id and validate it after"""
+def subscription_click_id():
+    subscription_click_id = save_subscription_parameters[3]
+    return str(subscription_click_id)
+
+
+if case_4_first_subscription_params["click_id"] == subscription_click_id():
+    print("subscription_click_id true")
+else:
+    print("subscription_click_id false")
+
+"""Validate subscription_external_message_id"""
+if case_4_first_subscription_params["external_message_id"] == str(save_subscription_parameters[14]):
+    print('subscription_external_message_id true')
+else:
+    print('subscription_external_message_id false')
+
+
+"""Select gateway_id for validation after"""
+def define_subscription_gateway_id():
+    cursor = connection.cursor()
+    gateway_select_query = "SELECT * " \
+                           "FROM gateway_aliases " \
+                           "WHERE alias = '{}'".format(case_4_first_subscription_params['partner'])
+    cursor.execute(gateway_select_query)
+    gateway_cortage = cursor.fetchall()
+    gateway_parameters = gateway_cortage[0]
+    gateway_id = gateway_parameters[2]
+    return str(gateway_id)
+
+
+if define_subscription_gateway_id() == str(save_subscription_parameters[17]):
+    print('subscription_partner true')
+else:
+    print('subscription_partner false')
+
+
+"""Validate subscription_external_subscription_id"""
+if case_4_first_subscription_params["external_subscription_id"] == save_subscription_parameters[2]:
+    print('subscription_external_subscription_id true')
+else:
+    print('subscription_external_subscription_id false')
+
+
+"""Select extra_param and validate it"""
+if case_4_first_subscription_params["extra_param"] == save_subscription_parameters[15]:
+    print('subscription_extra_param true')
+else:
+    print('subscription_extra_param false')
+
+
 
 """User_coefficient manipulation functions"""
 def close_user_offer_coefficient():
@@ -110,16 +161,14 @@ def select_second_rebill_user_offer_coefficient():
 save_user_offer_coefficient = select_second_rebill_user_offer_coefficient()
 
 """Проверка типа коэффициента второго ребилла.
- Сравнивается с типом коэффициента, по которому была созданна подписка. 
- После этого коэффициент, который был закрыт до этого(строка 80) открывается,
-  для создания последующей подписки с ребиллами"""
+ Сравнивается с типом коэффициента, по которому была созданна подписка. """
 if save_second_rebill[13] == save_user_offer_coefficient[3]:
     print("Second rebill user_coefficient_type({}) = subscription user_coefficient_type({})".format(save_second_rebill[13],save_user_offer_coefficient[3]))
 else:
     print("Second rebill user_coefficient_type({}) != subscription user_coefficient_type({})".format(save_second_rebill[13],save_user_offer_coefficient[3]))
 
 if save_user_offer_coefficient[6] != None:
-    print("Check coeffisient status.\nCoefficient is closed.\nCoefficient opening.")
+    print("Check coefficient status.\nCoefficient is closed.\nCoefficient opening.")
     time.sleep(3)
     open_user_offer_coefficient()
     print("Coefficient is opened")
@@ -127,29 +176,6 @@ else:
     print("Coefficient is opened. Do nothing")
 
 
-"""Second subscription block.
- Create and select second subscription"""
-def select_created_second_subscription():
-    case_four_second_subscription()
-    time.sleep(3)
-    cursor = connection.cursor()
-    second_subscription_select_query = "SELECT * " \
-                                "FROM subscription " \
-                                "WHERE click_id = {} " \
-                                "AND external_subscription_id = '{}'".format(used_click_for_subscription,
-                                                                             case_4_second_subscription_params["external_subscription_id"])
-    cursor.execute(second_subscription_select_query)
-    second_subscription_cortage = cursor.fetchall()
-    subscription_row = second_subscription_cortage[0]
-    return subscription_row
-
-
-"""Save selected second subscription data into variable"""
-save_second_subscription_parameters = select_created_second_subscription()
-
-
-# ТУТ НУЖНО ДОБАВИТЬ БЛОК,
-# ГДЕ БУДЕТ ЗАКРЫВАТЬСЯ ПРЕДЫДУЩИЙ КОЭФФИЦИЕНТ, А ПОСЛЕ ЭТОГО СОЗДАВАТЬСЯ НОВЫЙ
 
 # INSERT INTO "public"."users_sms_offers_coefficient" ("id", "user_id", "sms_offer_id", "coefficient_type", "coefficient_value", "closed_at", "deleted_at", "created_at", "updated_at")
 # VALUES (DEFAULT, 58, 453, 'percent', 0.4, null, null, '2019-04-30 14:54:46', null)
