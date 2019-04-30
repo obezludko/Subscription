@@ -93,6 +93,41 @@ def select_created_second_rebill():
 save_second_rebill = select_created_second_rebill()
 
 
+"""Check and save user_offer_coefficient status"""
+def select_second_rebill_user_offer_coefficient():
+    subscription_user_coefficient_id = save_subscription_parameters[12]
+    cursor = connection.cursor()
+    select_second_rebill_user_offer_coefficient_query = "SELECT * " \
+                                                        "FROM users_sms_offers_coefficient " \
+                                                        "WHERE id = {}".format(subscription_user_coefficient_id)
+    cursor.execute(select_second_rebill_user_offer_coefficient_query)
+    second_rebill_user_offer_coefficient_cortage = cursor.fetchall()
+    second_rebill_user_offer_coefficient = second_rebill_user_offer_coefficient_cortage[0]
+    return second_rebill_user_offer_coefficient
+
+save_user_offer_coefficient = select_second_rebill_user_offer_coefficient()
+
+"""Проверка типа коэффициента второго ребилла.
+ Сравнивается с типом коэффициента, по которому была созданна подписка"""
+if save_second_rebill[13] == save_user_offer_coefficient[3]:
+    print("Second rebill user_coefficient_type({}) = subscription user_coefficient_type({})".format(save_second_rebill[13],save_user_offer_coefficient[3]))
+else:
+    print("Second rebill user_coefficient_type({}) != subscription user_coefficient_type({})".format(save_second_rebill[13],save_user_offer_coefficient[3]))
+
+if save_user_offer_coefficient[6] != None:
+    print("Check coeffisient status.")
+    print("Coefficient is closed.")
+    print("Coefficient opening.")
+    time.sleep(3)
+    open_user_offer_coefficient()
+    print("Coefficient is opened")
+else:
+    print("Coefficient is opened. Do nothing")
+
+
+
+
+
 # print(save_subscription_parameters)
 # print(save_first_rebill)
 # close_user_offer_coefficient()
