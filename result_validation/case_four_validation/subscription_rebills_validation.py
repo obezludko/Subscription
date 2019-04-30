@@ -7,7 +7,7 @@ from connection.connection_variables import pg_user, \
     pg_port, \
     pg_database
 from parameters.subscription.case_4.subscription_params import *
-# from parameters.rebill.case_4.rebill_params import *
+from parameters.rebill.case_4.rebill_params import *
 
 """Connect to database using connection variables"""
 connection = psycopg2.connect(database=pg_database,
@@ -57,11 +57,47 @@ def open_user_offer_coefficient():
     return cursor.close()
 
 
+"""Create and save selected first rebill data into variable"""
+def select_created_first_rebill():
+    case_four_first_rebill()
+    time.sleep(2)
+    cursor = connection.cursor()
+    first_rebill_select_query = "SELECT * " \
+                                "FROM rebill " \
+                                "WHERE click_id = {} AND external_message_id = '{}'".format(used_click_for_subscription,
+                                                                                          case_4_first_rebill_params["external_message_id"])
+    cursor.execute(first_rebill_select_query)
+    first_rebill_cortage = cursor.fetchall()
+    first_rebill_row = first_rebill_cortage[0]
+    return first_rebill_row
 
+
+save_first_rebill = select_created_first_rebill()
+
+
+"""Close USER OFFER COEFFICIENT and create new rebill and select it"""
+def select_created_second_rebill():
+    close_user_offer_coefficient()  # Closing USER OFFER COEFFICIENT action
+    case_four_second_rebill()
+    time.sleep(3)
+    cursor = connection.cursor()
+    second_rebill_select_query = "SELECT * " \
+                                "FROM rebill " \
+                                "WHERE click_id = {} AND external_message_id = '{}'".format(used_click_for_subscription,
+                                                                                          case_4_second_rebill_params["external_message_id"])
+    cursor.execute(second_rebill_select_query)
+    second_rebill_cortage = cursor.fetchall()
+    second_rebill_row = second_rebill_cortage[0]
+    return second_rebill_row
+
+save_second_rebill = select_created_second_rebill()
+
+
+# print(save_subscription_parameters)
+# print(save_first_rebill)
 # close_user_offer_coefficient()
 # open_user_offer_coefficient()
-# print()
 # offer_id = save_subscription_parameters[11]
-# print(type(offer_id))
+
 
 
