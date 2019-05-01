@@ -133,7 +133,8 @@ else:
     print("{} IN {}. Test was failed. \nis_hidden = {}. Test was failed".format(coefficient_type, cpa_list,
                                                                                 save_subscription_parameters[13]))
 
-
+################ Я остановился тут
+################
 
 """User_coefficient manipulation functions"""
 def close_user_offer_coefficient():
