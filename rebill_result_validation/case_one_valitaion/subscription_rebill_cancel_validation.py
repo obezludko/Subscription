@@ -31,7 +31,7 @@ case_one_third_rebill()               # Third rebill action makes here
 case_one_fourth_rebill()              # Fourth rebill action makes here
 
 """Define sleeping time"""
-define_sleep = time.sleep(2)
+define_sleep = time.sleep(7)
 
 
 def select_created_subscription():
@@ -819,7 +819,7 @@ if save_subscription_parameters[7] == None:
 else:
     print("Subscription is closed already.")
 
-time.sleep(1)
+time.sleep(3)
 
 def select_subscription_closed_at():
     cursor = connection.cursor()
