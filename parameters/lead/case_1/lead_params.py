@@ -4,8 +4,7 @@ from click_sub.click import parse_url_and_append_click
  Lead hasn't be created"""
 
 used_click_for_lead = parse_url_and_append_click()
-# external_message_id = text_uniq_lead
-# external_subscription_id = subscr
+
 
 case_1_first_lead_params = {'partner': '',
                             'click_id': '',
