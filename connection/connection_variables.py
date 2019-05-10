@@ -1,4 +1,5 @@
-link = 'http://159.69.25.152/rebill?'
+link_for_rebill = 'http://159.69.25.152/rebill?'
+link_for_lead = 'http://159.69.25.152/lead'
 
 ####################STAGE_PGSQL_SETTINGS####################
 
