@@ -7,15 +7,17 @@ used_click_for_lead = parse_url_and_append_click()
 
 
 case_1_first_lead_params = {'partner': '',
-                            'click_id': '',
-                            'external_message_id': ''}
+                            'click_id':used_click_for_lead,
+                            'external_message_id': '',
+                            'payout':'0.1'}
 
 case_1_second_lead_params = {'partner': '',
-                             'click_id': '',
-                             'text_uniq_lead': ''}
+                             'click_id': used_click_for_lead,
+                             'text_uniq_lead': '',
+                             'currency':'USD'}
 
-case_1_third_lead_params = {'partner': 'test',
-                            'click_id': '',
+case_1_third_lead_params = {'partner': 'INVALID_666',
+                            'click_id':used_click_for_lead,
                             'external_message_id': ''}
 
 case_1_fourth_lead_params = {'partner': '',

@@ -28,7 +28,7 @@ def select_uncreated_leads():
     case_one_ninth_lead()
     case_one_tenth_lead()
     case_one_eleventh_lead()
-    time.sleep(7)
+    time.sleep(5)
     cursor = connection.cursor()
     lead_select_query = "SELECT * " \
                         "FROM lead " \
@@ -41,6 +41,8 @@ def select_uncreated_leads():
     cursor.execute(lead_select_query)
     lead_cortage = cursor.fetchall()
     return lead_cortage
+
+time.sleep(5)
 
 if select_uncreated_leads() == []:
     print('Nothing was created. Test is passed.')
