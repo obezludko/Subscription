@@ -36,3 +36,14 @@ def case_one_tenth_lead():
 def case_one_eleventh_lead():
     return requests.get(link_for_lead,case_1_eleventh_lead_params)
 
+def case_one_twelfth_lead():
+    return requests.get(link_for_lead,case_1_twelfth_lead_params)
+
+def case_one_thirteenth_lead():
+    return requests.get(link_for_lead,case_1_thirteenth_lead_params)
+
+def case_one_fourteenth_lead():
+    return requests.get(link_for_lead,case_1_fourteenth_lead_params)
+
+def case_one_fifteenth_lead():
+    return requests.get(link_for_lead,case_1_fifteenth_lead_params)

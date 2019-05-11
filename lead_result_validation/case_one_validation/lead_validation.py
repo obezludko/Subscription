@@ -28,21 +28,31 @@ def select_uncreated_leads():
     case_one_ninth_lead()
     case_one_tenth_lead()
     case_one_eleventh_lead()
-    time.sleep(5)
+    case_one_twelfth_lead()
+    case_one_thirteenth_lead()
+    case_one_fourteenth_lead()
+    case_one_fifteenth_lead()
+    time.sleep(7)
     cursor = connection.cursor()
     lead_select_query = "SELECT * " \
                         "FROM lead " \
                         "WHERE click_id = {} " \
-                        "OR external_message_id IN ('{}','{}','{}')".format(used_click_for_lead,
-                                                                            case_1_sixth_lead_params['text_uniq_lead'],
-                                                                            case_1_eighth_lead_params['text_uniq_lead'],
-                                                                            case_1_ninth_lead_params['text_uniq_lead'],
-                                                                            case_1_tenth_lead_params['text_uniq_lead'])
+                        "OR external_message_id IN ('{}','{}','{}','{}','{}')".format(used_click_for_lead,
+                                                                                      case_1_sixth_lead_params[
+                                                                                          'text_uniq_lead'],
+                                                                                      case_1_eighth_lead_params[
+                                                                                          'text_uniq_lead'],
+                                                                                      case_1_ninth_lead_params[
+                                                                                          'text_uniq_lead'],
+                                                                                      case_1_tenth_lead_params[
+                                                                                          'text_uniq_lead'],
+                                                                                      case_1_twelfth_lead_params[
+                                                                                          'external_message_id'])
     cursor.execute(lead_select_query)
     lead_cortage = cursor.fetchall()
     return lead_cortage
 
-time.sleep(5)
+time.sleep(2)
 
 if select_uncreated_leads() == []:
     print('Nothing was created. Test is passed.')
